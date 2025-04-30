@@ -1,42 +1,44 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  box-sizing: border-box;
+}
 
 html {
   height: 100%;
-  width: 100%;
 }
 
 body {
+  min-height: 100%;
+  margin: 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-attachment: fixed;
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  margin: 0;
-  padding: 20px;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  min-height: 100vh;
+  padding: 40px 20px;
 }
 
 .container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
   background: rgba(255, 255, 255, 0.95);
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
-  backdrop-filter: blur(4px);
 }
 
 h1 {
+  font-size: 32px;
   text-align: center;
-  color: #2d3436;
+  color: #6c5ce7;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
   font-weight: 600;
-  margin-bottom: 30px;
-  background: linear-gradient(120deg, #2d3436 0%, #636e72 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  margin-bottom: 42px;
+}
+
+h2 {
+  margin-top: 0;
 }
 
 .form-group {
@@ -76,13 +78,15 @@ select:focus {
 }
 
 .checkbox-group {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   padding: 8px;
 }
 
 .checkbox-group label {
+  flex: 0 0 auto;
+  min-width: 150px;
   font-weight: 400;
   display: flex;
   align-items: center;
