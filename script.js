@@ -3,21 +3,8 @@ document.getElementById('routineForm').addEventListener('submit', async (e) => {
   // Prevent the form from refreshing the page
   e.preventDefault();
   
-  // TODO: Get values from all form inputs and store them in variables
+  // TODO: Get values from all inputs and store them in variables
   
-  // Get all checkbox inputs with name="activities"
-  const checkboxes = document.getElementsByName('activities');
-  
-  // Create an empty array to store the activities user selected
-  const activities = [];
-  
-  // Loop through each checkbox and if it's checked, add its value to our activities array
-  checkboxes.forEach(checkbox => {
-    if (checkbox.checked) {
-      activities.push(checkbox.value);
-    }
-  });
-
   // Find the submit button and update its appearance to show loading state
   const button = document.querySelector('button[type="submit"]');
   button.textContent = 'Generating...';
