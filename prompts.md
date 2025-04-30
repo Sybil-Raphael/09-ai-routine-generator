@@ -11,4 +11,4 @@ Update the role: "user" message in the fetch request to plan a personalized dail
 It should provide a structured, step-by-step routine that fits these parameters.
 
 ## Prompt 2
-I want to save the all of the user’s selected routine preferences so that when they come back, their previous choices are still there. Add this behavior to my app.
+I want to save the all of the user's selected routine preferences so that when they come back, their previous choices are still there. Add this behavior to my app.
